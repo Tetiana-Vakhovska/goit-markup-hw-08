@@ -1,0 +1,57 @@
+@import './variables';
+@import './components/logo';
+@import './components/page-header';
+@import './components/index/hero';
+@import './components/index/benefit';
+@import './components/index/produce';
+@import './components/index/team';
+@import './components/index/client';
+@import './components/footer';
+@import './components/index/modal';
+@import './components/portfolio/secondary-button';
+@import './components/portfolio/portfolio-list';
+
+body {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $primary-text-color;
+  font-size: 14px;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding: 94px 0;
+}
+.section-title {
+  padding-bottom: 94px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: $title-text-color;
+  text-align: center;
+  margin-bottom: 50px;
+}
