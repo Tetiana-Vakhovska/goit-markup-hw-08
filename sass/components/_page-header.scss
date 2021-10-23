@@ -1,5 +1,6 @@
 .nav-section {
   margin-left: 93px;
+  position: relative;
 }
 .site-nav {
   display: flex;
@@ -19,7 +20,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
@@ -61,10 +63,10 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
-   
 }
 .contact-title__icon {
   width: 16px;
@@ -75,4 +77,34 @@
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button .is-open .icon-cross {
+  display: block;
+}
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  top: 0;
+  width: 100%;
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  &.is-open {
+    display: block;
+  }
 }
