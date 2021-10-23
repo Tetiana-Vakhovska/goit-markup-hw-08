@@ -1,0 +1,28 @@
+.benefit-section {
+  display: flex;
+  justify-content: space-between;
+}
+.benefit-section__item {
+  width: 270px;
+}
+.icon-conteiner {
+  width: 270px;
+  height: 120px;
+  background-color: $button-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.benefit-section__icon {
+  width: 70px;
+  height: 70px;
+}
+.benefit-section__title {
+  font-size: 14px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: $title-text-color;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
