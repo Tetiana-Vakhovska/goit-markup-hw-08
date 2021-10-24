@@ -23,20 +23,24 @@
           >Web<span class="main-nav--color">Studio</span>
         </a>
         <nav class="nav-section"> 
-            <button type="button" class="menu-button is-open"
+    
+            <button type="button" class="menu-button is-open js-open-menu"
           aria-expanded="false"
           aria-controls="menu-container"
           data-menu-button>
             <svg width="40"; heigth="40"; 
             aria-label="переключатель мобильного меню">
-              <use class="icon-cross"  href="./images/icons.svg#Vector"></use>
-              <use class="icon-menu" href="./images/icons.svg#menu">
-              </use>
+              
+              <use class="icon-menu" href="./images/icons.svg#menu"></use>
+              
             </svg>
           </button>
-          <div class="menu-container is-open" 
+          <div class="menu-container  js-menu-container " 
           id="menu-container"
           data-menu>
+          <button class="menu-toggle js-close-menu">
+            <use class="icon-cross"  href="./images/icons.svg#Vector"></use>
+          gggggggg</button>
           </div>
          
           <ul class="site-nav">
@@ -70,7 +74,7 @@
       </div>
     </header>
     <main>
-      <div >
+      <div class="overlay" >
         <section class="hero-section">
           <div class="container">
             <h1 class="hero-section__title">
