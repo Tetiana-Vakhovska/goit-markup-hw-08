@@ -264,6 +264,12 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+  .benefit-section {
+    display: block;
+  }
+}
+
 .benefit-section__item {
   width: 270px;
 }
@@ -282,6 +288,16 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .icon-conteiner {
+    display: block;
+    width: 450px;
+    height: 120px;
+    padding-left: 190px;
+    padding-top: 25px;
+  }
 }
 
 .benefit-section__icon {
@@ -305,6 +321,18 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .produce {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .produce-title {
+    display: none;
+  }
 }
 
 .produce__item {
@@ -345,16 +373,40 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+  .team {
+    display: block;
+  }
+}
+
 .team__member {
   border-radius: 0 0 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 480px) {
+  .team__member {
+    width: 450px;
+    height: 622px;
+  }
+  .team__member:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team__photo {
   width: 270px;
   height: 260px;
   max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .team__photo {
+    width: 450px;
+    height: 460px;
+    max-width: 100%;
+  }
 }
 
 .about-team-member {
@@ -418,6 +470,12 @@
 .social-networks__link:hover, .social-networks__link:focus {
   color: #ffffff;
   background-color: #2196f3;
+}
+
+@media screen and (max-width: 480px) {
+  .social-networks__link {
+    display: block;
+  }
 }
 
 .social-networks__icon {
