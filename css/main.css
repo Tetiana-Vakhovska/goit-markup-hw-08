@@ -231,12 +231,6 @@
   height: 70px;
 }
 
-@media screen and (max-width: 767px) {
-  .section-title {
-    display: none;
-  }
-}
-
 .title-section {
   background-color: #f5f4fa;
   padding: 94px 0;
@@ -997,24 +991,6 @@ body ul {
 
 body a {
   text-decoration: none;
-}
-
-@media screen and (min-width: 480px) {
-  body {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768x) {
-  body {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1140x) {
-  body {
-    width: 1140px;
-  }
 }
 
 .container {
