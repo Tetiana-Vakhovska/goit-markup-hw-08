@@ -1,9 +1,22 @@
 .client {
   display: flex;
+  @media screen and( max-width:480px) {
+    width: 450px;
+    flex-wrap: wrap;
+  }
 }
 .client__item {
   &:not(:last-child) {
     margin-right: 30px;
+  }
+  @media screen and( max-width:480px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+      margin-top: 30px;
+    }
+    &:not(:first-child) {
+      margin-bottom: -30px;
+    }
   }
 }
 .client__link {
