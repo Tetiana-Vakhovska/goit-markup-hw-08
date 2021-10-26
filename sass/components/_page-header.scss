@@ -1,8 +1,18 @@
+.main-nav__logo {
+  @media screen and(max-width:480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .nav-section {
   margin-left: 93px;
 }
+
 .site-nav {
   display: flex;
+  @media screen and(max-width:480px) {
+    display: none;
+  }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -47,6 +57,9 @@
 .contact-title {
   display: flex;
   margin-left: auto;
+  @media screen and(max-width:480px) {
+    display: none;
+  }
 }
 .contact-title__item:not(:last-child) {
   margin-right: 50px;
