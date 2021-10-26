@@ -38,6 +38,7 @@ body {
   }
   @media screen and( min-width:480px) {
     width: 480px;
+    padding-left: 15px;
   }
   @media screen and( min-width:768px) {
     width: 768px;
@@ -50,16 +51,22 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  @media screen and( max-width:480px) {
+    width: 480px;
+    margin: 0;
+    padding: 0;
+  }
 }
 .section {
   padding: 94px 0;
+  @media screen and (max-width: 480px) {
+    padding: 60px 0;
+  }
 }
-.section-title {
-  padding-bottom: 94px;
-}
+
 .title-mobil {
   @media screen and (max-width: 480px) {
-    padding-left: 83px;
+    padding-left: 25px;
   }
 }
 .title {
