@@ -8,8 +8,7 @@
 }
 .footer-design {
   display: flex;
-}
-.footer-design {
+
   @media screen and (max-width: 480px) {
     display: block;
   }
@@ -144,7 +143,7 @@
   margin-left: 10px;
   margin-bottom: -2px;
 }
-.main-nav__logo {
+.main-nav-logo--footer {
   @media screen and (max-width: 480px) {
     padding-left: 39px;
   }
