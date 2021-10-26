@@ -53,6 +53,11 @@
   padding-right: 32px;
   padding-top: 16px;
   justify-content: space-between;
+  @media screen and (max-width: 480px) {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-top: 16px;
+  }
 }
 .social-networks__item:not(:last-child) {
   margin-right: 10px;
