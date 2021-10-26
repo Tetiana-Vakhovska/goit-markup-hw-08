@@ -1,7 +1,11 @@
 .title-section {
   background-color: $button-bg-color;
   padding: 94px 0;
+  @media screen and(max-width: 480px) {
+    padding: 0;
+  }
 }
+
 .team {
   display: flex;
   justify-content: space-between;
