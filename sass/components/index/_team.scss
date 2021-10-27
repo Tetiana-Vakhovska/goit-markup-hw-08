@@ -2,7 +2,7 @@
   background-color: $button-bg-color;
   padding: 94px 0;
   @media screen and(max-width: 480px) {
-    padding: 0;
+    padding: 60px 0;
   }
 }
 
@@ -20,9 +20,13 @@
   @media screen and (max-width: 480px) {
     width: 450px;
     height: 622px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+    background-color: $primary-white-color;
   }
 }
 
@@ -40,6 +44,10 @@
   padding: 30px 0;
   text-align: center;
   background-color: $primary-white-color;
+  @media screen and (max-width: 480px) {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
 }
 .team__name {
   font-weight: 500;
@@ -83,9 +91,6 @@
   &:focus {
     color: $primary-white-color;
     background-color: $accent-color;
-  }
-  @media screen and (max-width: 480px) {
-    display: block;
   }
 }
 .social-networks__icon {
