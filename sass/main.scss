@@ -38,7 +38,6 @@ body {
   }
   @media screen and( min-width:480px) {
     width: 480px;
-    padding-left: 15px;
   }
   @media screen and( min-width:768px) {
     width: 768px;
@@ -54,7 +53,7 @@ body {
   @media screen and( max-width:480px) {
     width: 480px;
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
   }
 }
 .section {
@@ -69,6 +68,7 @@ body {
     padding-left: 25px;
   }
 }
+
 .title {
   font-size: 36px;
   font-weight: 700;
@@ -77,12 +77,8 @@ body {
   text-align: center;
   margin-bottom: 50px;
   @media screen and (max-width: 480px) {
-    padding-left: 138px;
-    text-align: start;
-  }
-}
-.title-mobil {
-  @media screen and (max-width: 480px) {
-    padding-left: 83px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
