@@ -37,6 +37,21 @@
   margin-bottom: 10px;
   padding-top: 30px;
   @media screen and (max-width: 480px) {
-    padding-left: 85px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 270px;
+    max-height: 16px;
+    padding-bottom: 10px;
+    &:not(:first-child) {
+      padding-top: 30px;
+    }
+  }
+}
+.benefit-section__description {
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    &:not(:first-child) {
+      padding-bottom: 30px;
+    }
   }
 }
