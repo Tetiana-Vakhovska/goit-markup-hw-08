@@ -4,6 +4,7 @@
   @media screen and (max-width: 480px) {
     width: 480px;
     height: 603px;
+    padding: 0;
   }
 }
 .footer-design {
@@ -20,6 +21,7 @@
 }
 .footer-design__item {
   @media screen and (max-width: 480px) {
+    text-align: center;
     &:not(:last-child) {
       padding-left: 109px;
     }
@@ -30,6 +32,9 @@
 }
 .footer-design__item:not(:last-child) {
   margin-right: 70px;
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
 }
 .footer-design__link {
   width: 231px;
@@ -58,18 +63,19 @@
   line-height: 1.7;
   color: $primary-white-color;
 }
-.footer-title--mobil {
-  @media screen and (max-width: 480px) {
-    padding-left: 116px;
-  }
-}
+
 .footer-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 17;
   color: $primary-white-color;
   @media screen and (max-width: 480px) {
-    padding-left: 43px;
+    padding-right: 83px;
+  }
+}
+.footer-design-item--mobil {
+  @media screen and (max-width: 480px) {
+    padding-right: 23;
   }
 }
 .social-footer {
@@ -105,6 +111,9 @@
 }
 .footer-email {
   margin-top: 20px;
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
 .footer-input {
   width: 358px;
@@ -119,6 +128,12 @@
   padding-bottom: 0px;
   padding-right: 0px;
   font-size: 16px;
+  @media screen and (max-width: 480px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 450px;
+    padding-right: -16px;
+  }
 }
 .button-fotter {
   width: 200;
@@ -135,6 +150,14 @@
   line-height: 1, 875;
   margin-left: 12px;
   cursor: pointer;
+  .footer-design-item--mobil {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 60px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
 }
 .send-icon {
   width: 24px;
@@ -145,6 +168,11 @@
 }
 .main-nav-logo--footer {
   @media screen and (max-width: 480px) {
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1, 17;
+    padding-top: 60px;
     padding-left: 39px;
   }
 }
