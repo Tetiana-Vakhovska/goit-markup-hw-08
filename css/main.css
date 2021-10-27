@@ -261,8 +261,7 @@
     margin: 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/headermobil.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headermobil.jpg);
-    padding-top: 118px;
-    padding-left: -15px;
+    padding: 118px 0;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -362,6 +361,28 @@
   padding-top: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .benefit-section__title {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 270px;
+    max-height: 16px;
+    padding-bottom: 10px;
+  }
+  .benefit-section__title:not(:first-child) {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefit-section__description {
+    width: 450px;
+  }
+  .benefit-section__description:not(:first-child) {
+    padding-bottom: 30px;
+  }
+}
+
 .produce {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +435,7 @@
 
 @media screen and (max-width: 480px) {
   .title-section {
-    padding: 0;
+    padding: 60px 0;
   }
 }
 
@@ -443,6 +464,10 @@
   .team__member {
     width: 450px;
     height: 622px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
   }
   .team__member:not(:last-child) {
     margin-bottom: 30px;
@@ -467,6 +492,13 @@
   padding: 30px 0;
   text-align: center;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .about-team-member {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
 }
 
 .team__name {
@@ -532,12 +564,6 @@
 .social-networks__link:hover, .social-networks__link:focus {
   color: #ffffff;
   background-color: #2196f3;
-}
-
-@media screen and (max-width: 480px) {
-  .social-networks__link {
-    display: block;
-  }
 }
 
 .social-networks__icon {
@@ -618,6 +644,7 @@
   .footer {
     width: 480px;
     height: 603px;
+    padding: 0;
   }
 }
 
@@ -640,6 +667,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .footer-design__item {
+    text-align: center;
+  }
   .footer-design__item:not(:last-child) {
     padding-left: 109px;
   }
@@ -650,6 +680,12 @@
 
 .footer-design__item:not(:last-child) {
   margin-right: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-design__item:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .footer-design__link {
@@ -689,12 +725,6 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
-  .footer-title--mobil {
-    padding-left: 116px;
-  }
-}
-
 .footer-title {
   font-weight: 700;
   font-size: 14px;
@@ -704,7 +734,13 @@
 
 @media screen and (max-width: 480px) {
   .footer-title {
-    padding-left: 43px;
+    padding-right: 83px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-design-item--mobil {
+    padding-right: 23;
   }
 }
 
@@ -756,6 +792,12 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-email {
+    width: 450px;
+  }
+}
+
 .footer-input {
   width: 358px;
   height: 50px;
@@ -769,6 +811,15 @@
   padding-bottom: 0px;
   padding-right: 0px;
   font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 450px;
+    padding-right: -16px;
+  }
 }
 
 .button-fotter {
@@ -788,6 +839,15 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .button-fotter .footer-design-item--mobil {
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
 .send-icon {
   width: 24px;
   height: 24px;
@@ -798,6 +858,11 @@
 
 @media screen and (max-width: 480px) {
   .main-nav-logo--footer {
+    color: #2196f3;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1, 17;
+    padding-top: 60px;
     padding-left: 39px;
   }
 }
@@ -1281,7 +1346,6 @@ body a {
 @media screen and (min-width: 480px) {
   body {
     width: 480px;
-    padding-left: 15px;
   }
 }
 
@@ -1307,7 +1371,7 @@ body a {
   .container {
     width: 480px;
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
   }
 }
 
@@ -1338,14 +1402,9 @@ body a {
 
 @media screen and (max-width: 480px) {
   .title {
-    padding-left: 138px;
-    text-align: start;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .title-mobil {
-    padding-left: 83px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
