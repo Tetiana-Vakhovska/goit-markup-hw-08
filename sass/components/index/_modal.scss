@@ -72,7 +72,7 @@
     height: 60px;
     text-align: center;
     padding-left: 112px;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 }
 .modal-text {
@@ -108,6 +108,9 @@
   line-height: 1, 17;
   color: $primary-text-color;
   margin-bottom: 4px;
+  @media screen and (max-width: 480px) {
+    margin-left: 40px;
+  }
 }
 .modal-section__input {
   width: 448px;
@@ -128,6 +131,10 @@
     border-radius: 4px;
     fill: $accent-color;
   }
+  @media screen and (max-width: 480px) {
+    width: 370px;
+    margin-left: 40px;
+  }
 }
 .icon-name {
   position: absolute;
@@ -136,6 +143,10 @@
   width: 18px;
   height: 18px;
   color: currentColor;
+  @media screen and (max-width: 480px) {
+    top: 149px;
+    left: 95px;
+  }
 }
 .icon-name-size {
   width: 12px;
@@ -146,6 +157,10 @@
   top: 195px;
   left: 56px;
   color: currentColor;
+  @media screen and (max-width: 480px) {
+    top: 217px;
+    left: 95px;
+  }
 }
 .icon-tel-size {
   width: 18px;
@@ -160,6 +175,10 @@
   top: 260px;
   left: 56px;
   color: currentColor;
+  @media screen and (max-width: 480px) {
+    top: 282px;
+    left: 95px;
+  }
 }
 .modal-section__comments {
   width: 448px;
@@ -179,6 +198,10 @@
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
+  }
+  @media screen and (max-width: 480px) {
+    width: 370px;
+    margin-left: 40px;
   }
 }
 .checkbox-section {
@@ -206,6 +229,9 @@
   background-color: $accent-color;
   border: none;
   background-image: url(../images/icons.svg#email);
+  @media screen and (max-width: 480px) {
+    margin-left: 60px;
+  }
 }
 
 .label {
@@ -230,6 +256,10 @@
   height: 24px;
   width: 400, 62px;
   text-align: center;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 1, 17;
+  }
 }
 .terms-contract {
   font-family: Roboto;
@@ -237,6 +267,10 @@
   font-size: 14px;
   line-height: 1, 71;
   color: $accent-color;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 1, 17;
+  }
 }
 .button-send {
   font-size: 16px;
@@ -257,5 +291,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: $button-send-color;
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: 135px;
+    margin-bottom: 40px;
   }
 }
