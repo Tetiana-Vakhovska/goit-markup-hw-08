@@ -17,14 +17,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header  >
+    <header class= >
       <div class="container main-nav">
           <a class="main-nav__logo" href="./index.html"
           >Web<span class="main-nav--color">Studio</span>
         </a>
-         
-
-        <nav class="nav-section">
           <button type="button" class="menu-button is-open js-open-menu"
           aria-expanded="false"
           aria-controls="menu-container"
@@ -32,24 +29,26 @@
             <svg width="40"; heigth="40"; 
             aria-label="переключатель мобильного меню">
                <use class="icon-cross"  href="./images/icons.svg#Vector"></use>
-              <use class="icon-menu"   href="./images/icons.svg#menunew"></use>
+              <use class="icon-menu"   href="./images/icons.svg#menu"></use>
               
             </svg>
           </button>
           <div class="menu-container js-menu-container" id="mobile-menu" 
           id="menu-container"
           data-menu>
-          <ul class="site-nav">
+          <nav class="nav-section"></nav>
+           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link--active" href="./index.html">Студия</a>
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="site-nav__link--active" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
           </ul>
-          <button class="menu-toggle js-close-menu"></button>
-          
+        </nav>
         <ul class="contact-title">
           <li class="contact-title__item">
             <a class="contact-title__link" href="">
@@ -67,14 +66,10 @@
               +38 096 111 11 11</a
             >
           </li>
-          
         </ul>
-        
         </div>
-        </nav>
       </div>
-      
-    </header>
+    </header>     
     <main>
       <div >
         <section class="hero-section">
