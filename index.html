@@ -17,32 +17,42 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class= >
+    <header >
       <div class="container main-nav">
           <a class="main-nav__logo" href="./index.html"
           >Web<span class="main-nav--color">Studio</span>
         </a>
-          <button type="button" class="menu-button is-open js-open-menu"
+        <div class="button-menu-open">
+          
+          <button type="button" class="menu-toggle  js-open-menu"
           aria-expanded="false"
           aria-controls="menu-container"
           data-menu-button>
-            <svg width="40"; heigth="40"; 
-            aria-label="переключатель мобильного меню">
-               <use class="icon-cross"  href="./images/icons.svg#Vector"></use>
-              <use class="icon-menu"   href="./images/icons.svg#menu"></use>
-              
+            <svg class="icon-cross--menu">
+              <use class="icon-menu"   href="./images/icons.svg#menunew"></use> 
             </svg>
           </button>
+      
+          </div>
+          
           <div class="menu-container js-menu-container" id="mobile-menu" 
           id="menu-container"
           data-menu>
+          <div class="button-cross-position">
+          <button class="menu-toggle js-close-menu">
+             <svg class=" icon-cross--size">
+               <use class="icon-cross"  href="./images/icons.svg#Vector"></use>
+            </svg>
+          </button>
+          </div>
+
           <nav class="nav-section"></nav>
            <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
+              <a class="site-nav__link--active" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link--active" href="./portfolio.html">Портфолио</a>
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
@@ -558,6 +568,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobil-menu.js"></script>
-    <script      defer      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="      crossorigin="anonymous"    ></script>
+    
   </body>
 </html>
