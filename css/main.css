@@ -21,21 +21,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .page-header {
-    min-height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .main-nav__logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -99,7 +84,7 @@
 @media screen and (max-width: 480px) {
   .site-nav__link {
     font-size: 40px;
-    padding-left: 180px;
+    padding-left: 40px;
     padding-top: 32px;
     padding-bottom: 0;
     text-align: start;
@@ -129,11 +114,20 @@
 }
 
 @media screen and (max-width: 480px) {
+  .site-nav__link--active::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .site-nav__link--active {
     font-size: 40px;
-    padding-left: 50px;
+    padding-left: 40px;
     padding-top: 40px;
+    padding-right: 0;
     padding-bottom: 0;
+    padding-bottom: 0;
+    text-align: start;
   }
 }
 
@@ -219,22 +213,37 @@
   height: 40px;
 }
 
-.icon-cross,
-.icon-menu {
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.icon-cross--size {
+  width: 18px;
+  height: 18px;
+  color: #212121;
+}
+
+.icon-cross--sizehover, .icon-cross--sizefocus {
+  color: #2196f3;
+}
+
+.button-cross-position {
   width: 40px;
   height: 40px;
+  padding-left: 425px;
+  padding-top: 10px;
 }
 
-.menu-button .icon-cross {
-  display: none;
+.icon-cross--menu {
+  width: 24px;
+  height: 16px;
+  color: #212121;
 }
 
-.menu-button .is-open .icon-cross {
-  display: block;
-}
-
-.menu-button .is-open .icon-menu {
-  display: none;
+.icon-cross--menuhover, .icon-cross--menufocus {
+  color: #2196f3;
 }
 
 @media screen and (max-width: 480px) {
@@ -242,7 +251,7 @@
     position: absolute;
     width: 100%;
     height: 796px;
-    top: 100%;
+    top: 0;
     left: 0;
     padding: 0;
     background-color: #ffffff;
