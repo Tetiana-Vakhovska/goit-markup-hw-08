@@ -1,7 +1,6 @@
 .client {
-  @media screen and( max-width:1600px) {
-    display: flex;
-  }
+  display: flex;
+
   @media screen and( max-width:480px) {
     width: 450px;
     flex-wrap: wrap;
@@ -9,40 +8,38 @@
 }
 
 .client__item {
-  @media screen and( max-width:1600px) {
-    &:not(:last-child) {
-      margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  @media screen and( max-width:480px) {
+    &:nth-child(-n + 4) {
+      margin-bottom: 30px;
     }
-    @media screen and( max-width:480px) {
-      &:nth-child(-n + 4) {
-        margin-bottom: 30px;
-      }
-      &:nth-child(odd) {
-        margin-right: 30px;
-      }
+    &:nth-child(odd) {
+      margin-right: 30px;
     }
   }
 }
+
 .client__link {
-  @media screen and( max-width:1600px) {
-    display: flex;
-    width: 170px;
-    height: 92px;
-    border: 1px solid $client-solid-color;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    color: $client-solid-color;
-    transition-property: color border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      border: 1px solid $accent-color;
-      color: $accent-color;
-    }
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $client-solid-color;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: $client-solid-color;
+  transition-property: color border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
   }
-  @media screen and( max-width:1600px) {
+
+  @media screen and( max-width:480px) {
     width: 210px;
   }
 }
