@@ -131,11 +131,13 @@
   }
 }
 
-.contact-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contact-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -191,13 +193,15 @@
   margin-right: 10px;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+@media screen and (max-width: 480px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -222,14 +226,21 @@
   }
 }
 
-.icon-cross--size {
-  width: 18px;
-  height: 18px;
-  color: #212121;
+@media screen and (max-width: 480px) {
+  .icon-cross--size {
+    width: 18px;
+    height: 18px;
+    color: #212121;
+  }
+  .icon-cross--sizehover, .icon-cross--sizefocus {
+    color: #2196f3;
+  }
 }
 
-.icon-cross--sizehover, .icon-cross--sizefocus {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .icon-cross--size {
+    display: none;
+  }
 }
 
 .button-cross-position {
@@ -239,14 +250,21 @@
   padding-top: 10px;
 }
 
-.icon-cross--menu {
-  width: 24px;
-  height: 16px;
-  color: #212121;
+@media screen and (max-width: 480px) {
+  .icon-cross--menu {
+    width: 24px;
+    height: 16px;
+    color: #212121;
+  }
+  .icon-cross--menuhover, .icon-cross--menufocus {
+    color: #2196f3;
+  }
 }
 
-.icon-cross--menuhover, .icon-cross--menufocus {
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .icon-cross--menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -275,6 +293,8 @@
 @media screen and (max-width: 480px) and (min-width: 768px) {
   .menu-container {
     display: none;
+    width: 1200px;
+    margin: 0;
   }
 }
 
@@ -539,6 +559,7 @@
   width: 270px;
   height: 260px;
   max-width: 100%;
+  display: block;
 }
 
 @media screen and (max-width: 480px) {
