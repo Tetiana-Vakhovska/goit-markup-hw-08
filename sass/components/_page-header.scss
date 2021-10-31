@@ -88,8 +88,10 @@
   }
 }
 .contact-title {
-  display: flex;
-  margin-left: auto;
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: auto;
+  }
 
   @media screen and(max-width:480px) {
     display: block;
@@ -131,10 +133,12 @@
 }
 
 .menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  @media screen and(max-width:480px) {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }
 
 .menu-button {
@@ -155,12 +159,17 @@
 }
 
 .icon-cross--size {
-  width: 18px;
-  height: 18px;
-  color: $title-text-color;
-  &hover,
-  &focus {
-    color: $accent-color;
+  @media screen and(max-width:480px) {
+    width: 18px;
+    height: 18px;
+    color: $title-text-color;
+    &hover,
+    &focus {
+      color: $accent-color;
+    }
+  }
+  @media screen and(min-width:768px) {
+    display: none;
   }
 }
 .button-cross-position {
@@ -170,12 +179,17 @@
   padding-top: 10px;
 }
 .icon-cross--menu {
-  width: 24px;
-  height: 16px;
-  color: $title-text-color;
-  &hover,
-  &focus {
-    color: $accent-color;
+  @media screen and(max-width:480px) {
+    width: 24px;
+    height: 16px;
+    color: $title-text-color;
+    &hover,
+    &focus {
+      color: $accent-color;
+    }
+  }
+  @media screen and(min-width:768px) {
+    display: none;
   }
 }
 
@@ -198,6 +212,8 @@
     }
     @media screen and(min-width:768px) {
       display: none;
+      width: 1200px;
+      margin: 0;
     }
   }
 
