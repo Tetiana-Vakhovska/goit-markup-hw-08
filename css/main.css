@@ -642,21 +642,29 @@
 @media screen and (max-width: 480px) {
   .client {
     width: 450px;
+    height: 399px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .client__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .client__item:nth-child(-n + 4) {
-    margin-bottom: 30px;
+  .client__item {
+    width: 210px;
+    height: 92px;
+    padding: 0;
   }
-  .client__item:nth-child(odd) {
+  .client__item:nth-child(1), .client__item:nth-child(3) {
     margin-right: 30px;
+  }
+  .client__item:nth-child(6) {
+    margin-left: 30px;
   }
 }
 
@@ -691,6 +699,7 @@
 @media screen and (max-width: 480px) {
   .client__link {
     width: 210px;
+    height: 92px;
   }
 }
 
