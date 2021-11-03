@@ -7,6 +7,9 @@
   margin-top: -30px;
   margin-left: -30px;
   overflow: hidden;
+  @media screen and( max-width:480px) {
+    display: block;
+  }
 }
 .portfolio-list__item {
   flex-basis: calc(100% / 3 - 30px);
@@ -14,6 +17,10 @@
   width: 370px;
   height: 404px;
   overflow: hidden;
+  @media screen and( max-width:480px) {
+    width: 450px;
+    height: 404px;
+  }
 }
 .portfolio-list__item:hover .portfolio-list__active::before {
   transform: translateY(0);
@@ -54,6 +61,11 @@
   width: 370px;
   height: 294px;
   max-width: 100%;
+  @media screen and( max-width:480px) {
+    display: block;
+    width: 450px;
+    height: 294px;
+  }
 }
 .portfolio-list__card {
   padding: 20px 24px;
