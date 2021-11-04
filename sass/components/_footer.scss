@@ -6,12 +6,22 @@
     height: 603px;
     padding: 0;
   }
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 463px;
+    padding: 0;
+  }
 }
 .footer-design {
-  display: flex;
-
+  @media screen and (max-width: 769px) {
+    display: flex;
+  }
   @media screen and (max-width: 480px) {
     display: block;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .footer-design-item--mobil {
