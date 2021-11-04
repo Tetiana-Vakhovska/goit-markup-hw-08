@@ -1,5 +1,5 @@
 .hero-section {
-  @media screen and( min-width:768px) {
+  @media screen and( min-width:769px) {
     padding: 200px 0;
     text-align: center;
     max-width: 1600px;
@@ -7,6 +7,18 @@
     margin-left: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media screen and( max-width:768px) {
+    padding-top: 118px;
+    text-align: center;
+    max-width: 100%;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/headertablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -24,11 +36,23 @@
   }
 }
 .hero-section__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: $primary-white-color;
-  margin-bottom: 30px;
+  @media screen and( min-width:769px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: $primary-white-color;
+    margin-bottom: 30px;
+  }
+  @media screen and( max-width:768px) {
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    color: $primary-white-color;
+    margin-left: 204px;
+    width: 360px;
+    height: 84px;
+    margin-bottom: 30px;
+  }
   @media screen and( max-width:480px) {
     font-size: 26px;
     line-height: 1.62;
@@ -37,6 +61,7 @@
     margin-bottom: 40px;
     width: 360px;
     height: 84px;
+    color: $primary-white-color;
   }
 }
 .hero-section__button {
