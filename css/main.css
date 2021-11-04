@@ -265,7 +265,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .icon-cross--size {
     display: none;
   }
@@ -280,7 +280,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .button-cross-position {
     display: none;
     width: 100%;
@@ -298,7 +298,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .icon-cross--menu {
     display: none;
   }
@@ -327,7 +327,7 @@
   }
 }
 
-@media screen and (max-width: 480px) and (min-width: 768px) {
+@media screen and (max-width: 480px) and (min-width: 481px) {
   .menu-container {
     height: 80px;
     display: none;
@@ -341,7 +341,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .menu-container .menu-container .is-open {
     display: none;
   }
@@ -374,7 +374,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .menu-toggle {
     display: none;
   }
@@ -390,7 +390,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .social-links {
     display: none;
   }
@@ -409,7 +409,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .social-links__item {
     display: none;
   }
@@ -424,13 +424,13 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .social-links__link {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .hero-section {
     padding: 200px 0;
     text-align: center;
@@ -439,6 +439,21 @@
     margin-left: auto;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/overlay.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 200px 0;
+    text-align: center;
+    max-width: 100%;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablethero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablethero.jpg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -459,15 +474,17 @@
   }
 }
 
-.hero-section__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: #ffffff;
-  margin-bottom: 30px;
+@media screen and (min-width: 769px) {
+  .hero-section__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero-section__title {
     font-size: 26px;
     line-height: 1.62;
