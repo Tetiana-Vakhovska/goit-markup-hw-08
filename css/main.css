@@ -446,14 +446,14 @@
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    padding: 200px 0;
+    padding-top: 118px;
     text-align: center;
     max-width: 100%;
     height: 400px;
     margin-right: auto;
     margin-left: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablethero.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablethero.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/headertablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headertablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -489,10 +489,24 @@
     font-size: 26px;
     line-height: 1.62;
     text-align: center;
+    color: #ffffff;
+    margin-left: 204px;
+    width: 360px;
+    height: 84px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section__title {
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
     padding-left: 25px;
     margin-bottom: 40px;
     width: 360px;
     height: 84px;
+    color: #ffffff;
   }
 }
 
@@ -1731,10 +1745,20 @@ body a {
   }
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+@media screen and (min-width: 769px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0;
+    padding: 0 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
