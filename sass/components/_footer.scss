@@ -20,6 +20,7 @@
   }
 }
 .footer-design__item {
+  color: currentColor;
   @media screen and (max-width: 480px) {
     text-align: center;
     &:not(:last-child) {
@@ -167,11 +168,11 @@
   margin-bottom: -2px;
 }
 .main-nav-logo--footer {
+  color: $accent-color;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1, 17;
   @media screen and (max-width: 480px) {
-    color: $accent-color;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1, 17;
     padding-top: 60px;
     padding-left: 39px;
   }
