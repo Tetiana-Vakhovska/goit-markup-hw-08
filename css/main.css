@@ -870,6 +870,10 @@
   }
 }
 
+.footer-design__item {
+  color: currentColor;
+}
+
 @media screen and (max-width: 480px) {
   .footer-design__item {
     text-align: center;
@@ -1060,12 +1064,15 @@
   margin-bottom: -2px;
 }
 
+.main-nav-logo--footer {
+  color: #2196f3;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1, 17;
+}
+
 @media screen and (max-width: 480px) {
   .main-nav-logo--footer {
-    color: #2196f3;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1, 17;
     padding-top: 60px;
     padding-left: 39px;
   }
