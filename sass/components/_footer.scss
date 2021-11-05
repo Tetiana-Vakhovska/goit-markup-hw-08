@@ -13,7 +13,7 @@
   }
 }
 .footer-design {
-  @media screen and (max-width: 769px) {
+  @media screen and (min-width: 769px) {
     display: flex;
   }
   @media screen and (max-width: 480px) {
