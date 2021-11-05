@@ -4,8 +4,14 @@
     padding-bottom: 16px;
     padding-right: 167px;
   }
+  @media screen and(max-width:768px) {
+    font-size: 24px;
+  }
 }
 .main-nav {
+  @media screen and(max-width:768px) {
+    border-bottom: 1px solid $border-portfolio;
+  }
   @media screen and(max-width:480px) {
     height: 60px;
     position: relative;
@@ -20,6 +26,9 @@
 
   @media screen and(max-width:480px) {
     display: block;
+  }
+  @media screen and(max-width:768px) {
+    display: flex;
   }
 }
 .site-nav__item:not(:last-child) {
@@ -87,7 +96,7 @@
   }
 }
 .contact-title {
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:769px) {
     display: flex;
     margin-left: auto;
   }
@@ -99,12 +108,25 @@
 
     padding-bottom: 64px;
   }
+  @media screen and(max-width:768px) {
+    margin-left: 0;
+  }
 }
-.contact-title__item:not(:last-child) {
-  margin-right: 50px;
+.contact-title__item {
+  @media screen and(min-width:769px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and(max-width:768px) {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 .contact-title__link {
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:769px) {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.17;
@@ -119,6 +141,11 @@
     &:focus {
       color: $accent-color;
     }
+  }
+  @media screen and(max-width:768px) {
+    width: 138px;
+    margin: 0;
+    font-size: 12px;
   }
   @media screen and(max-width:480px) {
     font-size: 34px;
@@ -137,6 +164,11 @@
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  @media screen and(max-width:768px) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
   @media screen and(max-width:480px) {
     display: none;
   }
@@ -145,6 +177,11 @@
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  @media screen and(max-width:768px) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
   @media screen and(max-width:480px) {
     display: none;
   }
@@ -321,6 +358,7 @@
   @media screen and(max-width:768px) {
     &:nth-child(2) {
       margin-top: 21px;
+      margin-left: 64px;
     }
   }
 }
