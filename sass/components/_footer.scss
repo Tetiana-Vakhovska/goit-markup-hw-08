@@ -8,8 +8,8 @@
   }
   @media screen and (max-width: 768px) {
     width: 768px;
-    height: 463px;
     padding: 0;
+    background: $section-bg-color;
   }
 }
 .footer-design {
@@ -22,13 +22,18 @@
   @media screen and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
   }
 }
 .footer-design-item--mobil {
   @media screen and (max-width: 480px) {
     padding-left: 15px;
   }
+  @media screen and (max-width: 768px) {
+    width: 738px;
+  }
 }
+
 .footer-design__item {
   color: currentColor;
   @media screen and (max-width: 480px) {
@@ -40,7 +45,15 @@
       margin-top: 60px;
     }
   }
+  padding-top: 60px;
+  @media screen and (max-width: 768px) {
+    &:nth-child(2) {
+      padding-left: 166px;
+      margin-top: 5px;
+    }
+  }
 }
+
 .footer-design__item:not(:last-child) {
   margin-right: 70px;
   @media screen and (max-width: 480px) {
@@ -69,6 +82,9 @@
   &:not(:last-child) {
     margin-bottom: 9px;
   }
+  @media screen and (max-width: 768px) {
+    width: 232px;
+  }
 }
 .contact-footer__link {
   line-height: 1.7;
@@ -83,6 +99,11 @@
   @media screen and (max-width: 480px) {
     padding-right: 83px;
   }
+  @media screen and (max-width: 768px) {
+    &:nth-child(1) {
+      text-align: center;
+    }
+  }
 }
 .footer-design-item--mobil {
   @media screen and (max-width: 480px) {
@@ -92,6 +113,9 @@
 .social-footer {
   display: flex;
   padding-top: 20px;
+  @media screen and (max-width: 768px) {
+    width: 206px;
+  }
 }
 .social-footer__item:not(:last-child) {
   margin-right: 10px;
@@ -125,6 +149,10 @@
   @media screen and (max-width: 480px) {
     width: 450px;
   }
+  @media screen and (max-width: 768px) {
+    width: 738px;
+    padding-left: 166px;
+  }
 }
 .footer-input {
   width: 358px;
@@ -144,6 +172,10 @@
     margin-bottom: 20px;
     width: 450px;
     padding-right: -16px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-right: 152px;
+    width: 450px;
   }
 }
 .button-fotter {
@@ -169,6 +201,11 @@
       margin-bottom: 0;
     }
   }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 125px;
+  }
 }
 .send-icon {
   width: 24px;
@@ -185,5 +222,15 @@
   @media screen and (max-width: 480px) {
     padding-top: 60px;
     padding-left: 39px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-left: 100px;
+  }
+}
+.contact {
+  @media screen and (max-width: 768px) {
+    width: 232px;
+    padding-left: 61px;
+    text-align: center;
   }
 }
