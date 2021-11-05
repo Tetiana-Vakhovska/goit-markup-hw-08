@@ -28,6 +28,18 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-nav__logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .main-nav {
     height: 60px;
@@ -48,6 +60,14 @@
 @media screen and (max-width: 480px) {
   .site-nav {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -131,7 +151,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .contact-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -149,11 +169,28 @@
   }
 }
 
-.contact-title__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 768px) {
+  .contact-title {
+    margin-left: 0;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+  .contact-title__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-title__item {
+    margin: 0;
+  }
+  .contact-title__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
   .contact-title__link {
     font-size: 14px;
     font-weight: 500;
@@ -178,6 +215,14 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .contact-title__link {
+    width: 138px;
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .contact-title__link {
     font-size: 34px;
@@ -197,6 +242,14 @@
   margin-right: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-title__icon {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .contact-title__icon {
     display: none;
@@ -207,6 +260,14 @@
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-title__smartphone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -435,15 +496,13 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 768px) {
   .nav__item:nth-child(2) {
     margin-top: 21px;
+    margin-left: 64px;
   }
 }
 
@@ -465,6 +524,7 @@
   .hero-section {
     padding-top: 118px;
     text-align: center;
+    width: 100%;
     max-width: 768px;
     height: 400px;
     margin-right: auto;
@@ -1811,6 +1871,15 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 738px;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .portfolio-list {
     display: block;
@@ -1824,6 +1893,19 @@
   width: 370px;
   height: 404px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-list__item {
+    max-width: 354px;
+    margin: 0;
+    -ms-flex-preferred-size: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+  }
+  .portfolio-list__item:nth-child(1), .portfolio-list__item:nth-child(3), .portfolio-list__item:nth-child(5), .portfolio-list__item:nth-child(7) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1847,6 +1929,12 @@
 .portfolio-list__link :focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-list__link {
+    width: 354px;
+  }
 }
 
 .portfolio-list__active {
@@ -1888,6 +1976,13 @@
   max-width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio-list__img {
+    width: 354px;
+    display: block;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .portfolio-list__img {
     display: block;
@@ -1901,6 +1996,12 @@
   border: 1px solid #eeeeee;
   border-top: none;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-list__card {
+    width: 354px;
+  }
 }
 
 .portfolio-list__title {
