@@ -538,6 +538,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
 
@@ -554,6 +555,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headertablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
 
@@ -569,6 +571,7 @@
     background-repeat: no-repeat;
     text-align: center;
     max-width: 480px;
+    background-size: cover;
   }
 }
 
@@ -984,15 +987,6 @@
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
-  .client {
-    width: 450px;
-    height: 399px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .client {
     width: 738px;
@@ -1002,26 +996,20 @@
 }
 
 @media screen and (max-width: 480px) {
-  .client__item {
-    width: 210px;
-    height: 92px;
-    padding: 0;
-  }
-  .client__item:nth-child(1), .client__item:nth-child(3) {
-    margin-right: 30px;
-  }
-  .client__item:nth-child(6) {
-    margin-left: 30px;
+  .client {
+    width: 450px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width: 480px) and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .client__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-@media screen and (max-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .client__item:nth-child(1), .client__item:nth-child(2) {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -1031,6 +1019,22 @@
   }
   .client__item:nth-child(4), .client__item:nth-child(5) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .client__item {
+    width: 210px;
+    height: 92px;
+    padding: 0;
+    -ms-flex-preferred-size: 100%/2;
+        flex-basis: 100%/2;
+  }
+  .client__item:nth-child(1), .client__item:nth-child(3) {
+    margin-right: 30px;
+  }
+  .client__item:nth-child(6) {
+    margin-left: 30px;
   }
 }
 
@@ -1060,13 +1064,6 @@
 .client__link:hover, .client__link:focus {
   border: 1px solid #2196f3;
   color: #2196f3;
-}
-
-@media screen and (max-width: 768px) {
-  .client__link {
-    width: 226px;
-    height: 92px;
-  }
 }
 
 @media screen and (max-width: 480px) {
