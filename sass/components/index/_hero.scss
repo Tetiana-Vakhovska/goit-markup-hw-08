@@ -9,6 +9,7 @@
       url(../images/overlay.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
   @media screen and( max-width:768px) {
     padding-top: 118px;
@@ -22,6 +23,7 @@
       url(../images/headertablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
   @media screen and( max-width:480px) {
     width: 100%;
@@ -34,6 +36,7 @@
     background-repeat: no-repeat;
     text-align: center;
     max-width: 480px;
+    background-size: cover;
   }
 }
 .hero-section__title {
