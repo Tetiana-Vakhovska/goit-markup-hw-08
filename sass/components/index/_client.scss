@@ -1,23 +1,40 @@
 .client {
   display: flex;
-
-  @media screen and(  max-width:768px) {
-    width: 738px;
-    flex-wrap: wrap;
-  }
   @media screen and( max-width:480px) {
     width: 450px;
     flex-wrap: wrap;
   }
+  @media screen and(  min-width:481px) {
+    width: 738px;
+    flex-wrap: wrap;
+  }
+  @media screen and(  min-width:769px) {
+    width: 1200px;
+  }
 }
 
 .client__item {
-  @media screen and( min-width:769px) {
-    &:not(:last-child) {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  @media screen and( max-width:480px) {
+    width: 210px;
+    height: 92px;
+    padding: 0;
+    flex-basis: 100%/2;
+    &:nth-child(1),
+    &:nth-child(3) {
       margin-right: 30px;
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+      margin-right: -30px;
     }
   }
-  @media screen and(  max-width:768px) {
+  @media screen and(  min-width:481px) {
     &:nth-child(1),
     &:nth-child(2) {
       margin-right: 30px;
@@ -31,21 +48,7 @@
       margin-right: 30px;
     }
   }
-  @media screen and( max-width:480px) {
-    width: 210px;
-    height: 92px;
-    padding: 0;
-    flex-basis: 100%/2;
-    &:nth-child(1),
-    &:nth-child(3) {
-      margin-right: 30px;
-    }
-    &:nth-child(6) {
-      margin-left: 30px;
-    }
-  }
 }
-
 .client__link {
   display: flex;
   width: 170px;
@@ -63,12 +66,16 @@
     border: 1px solid $accent-color;
     color: $accent-color;
   }
-
   @media screen and( max-width:480px) {
     width: 210px;
     height: 92px;
   }
+  @media screen and( min-width:769px) {
+    width: 170px;
+    height: 92px;
+  }
 }
+
 .client__icon {
   fill: currentColor;
   width: 106px;
