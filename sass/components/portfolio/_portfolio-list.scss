@@ -7,13 +7,14 @@
   margin-top: -30px;
   margin-left: -30px;
   overflow: hidden;
-  @media screen and( max-width:768px) {
+
+  @media screen and( max-width:480px) {
+    display: block;
+  }
+  @media screen and( min-width:481px) {
     flex-wrap: wrap;
     width: 738px;
     margin: 0;
-  }
-  @media screen and( max-width:480px) {
-    display: block;
   }
 }
 .portfolio-list__item {
@@ -22,7 +23,11 @@
   width: 370px;
   height: 404px;
   overflow: hidden;
-  @media screen and( max-width:768px) {
+  @media screen and( max-width:480px) {
+    width: 450px;
+    height: 404px;
+  }
+  @media screen and( min-width:481px) {
     max-width: 354px;
 
     margin: 0;
@@ -34,10 +39,6 @@
       margin-right: 30px;
       margin-bottom: 30px;
     }
-  }
-  @media screen and( max-width:480px) {
-    width: 450px;
-    height: 404px;
   }
 }
 .portfolio-list__item:hover .portfolio-list__active::before {
@@ -51,7 +52,7 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  @media screen and( max-width:768px) {
+  @media screen and( min-width:481px) {
     width: 354px;
   }
 }
@@ -82,14 +83,14 @@
   width: 370px;
   height: 294px;
   max-width: 100%;
-  @media screen and( max-width:768px) {
-    width: 354px;
-    display: block;
-  }
   @media screen and( max-width:480px) {
     display: block;
     width: 450px;
     height: 294px;
+  }
+  @media screen and( min-width:481px) {
+    width: 354px;
+    display: block;
   }
 }
 .portfolio-list__card {
@@ -97,7 +98,7 @@
   border: 1px solid $portfolio-border-color;
   border-top: none;
   overflow: hidden;
-  @media screen and( max-width:768px) {
+  @media screen and( min-width:481px) {
     width: 354px;
   }
 }
