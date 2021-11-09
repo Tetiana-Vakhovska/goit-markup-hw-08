@@ -420,6 +420,10 @@
   }
 }
 
+.menu-toggle {
+  opacity: 0;
+}
+
 @media screen and (max-width: 480px) {
   .menu-toggle {
     min-width: 40px;
@@ -437,7 +441,6 @@
     margin: 0;
     padding: 0;
     background-color: transparent;
-    border: none;
     border-radius: 50%;
     color: #212121;
   }
@@ -451,6 +454,10 @@
   .menu-toggle {
     display: none;
   }
+}
+
+.menu-toggle js-open-menu {
+  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
@@ -1272,7 +1279,7 @@
 
 @media screen and (min-width: 481px) {
   .footer-design__item:nth-child(2) {
-    padding-left: 166px;
+    padding-left: 96px;
     margin-top: 5px;
   }
 }
@@ -1353,6 +1360,7 @@
 @media screen and (max-width: 480px) {
   .footer-title {
     padding-right: 83px;
+    text-align: center;
   }
 }
 
@@ -1475,6 +1483,7 @@
   .footer-input {
     padding-right: 152px;
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1640,7 +1649,7 @@
   .modal {
     width: 450px;
     height: 609px;
-    top: 70%;
+    top: 50%;
     left: 70%;
   }
 }
@@ -1669,6 +1678,12 @@
   .button-position {
     width: 443px;
     padding-left: 435px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .button-position {
+    padding-left: 478px;
   }
 }
 
@@ -2055,6 +2070,12 @@
   }
 }
 
+@media screen and (min-width: 481px) {
+  .secondary-button__title {
+    margin-left: -45px;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .secondary-button__title {
     -ms-flex-wrap: wrap;
@@ -2129,6 +2150,7 @@
 @media screen and (max-width: 480px) {
   .portfolio-list {
     display: block;
+    overflow: hidden;
   }
 }
 
@@ -2166,6 +2188,7 @@
   .portfolio-list__item {
     width: 450px;
     height: 404px;
+    overflow: hidden;
   }
 }
 
@@ -2264,6 +2287,7 @@
     display: block;
     width: 450px;
     height: 294px;
+    overflow: hidden;
   }
 }
 
