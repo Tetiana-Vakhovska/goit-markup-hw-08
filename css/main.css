@@ -404,8 +404,8 @@
 
 @media screen and (min-width: 481px) {
   .menu-container {
-    height: 80px;
-    display: none;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
