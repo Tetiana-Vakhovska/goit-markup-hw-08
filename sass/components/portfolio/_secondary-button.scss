@@ -6,6 +6,9 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  @media screen and( min-width:481px) {
+    margin-left: -45px;
+  }
   @media screen and( min-width:769px) {
     flex-wrap: wrap;
     justify-content: flex-start;
