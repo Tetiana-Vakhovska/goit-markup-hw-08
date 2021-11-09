@@ -19,6 +19,12 @@
 }
 .nav-section {
   margin-left: 93px;
+  @media screen and(min-width:481px) {
+    margin-left: 53px;
+  }
+  @media screen and(min-width:769px) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav {
@@ -352,8 +358,9 @@
 .nav {
   @media screen and(min-width:769px) {
     display: flex;
+    margin-left: -20px;
   }
-  @media screen and(max-width:768px) {
+  @media screen and(min-width:481px) {
     display: flex;
   }
   @media screen and(max-width:480px) {
@@ -361,16 +368,22 @@
   }
 }
 .nav__item {
+  @media screen and(max-width:480px) {
+    &:nth-child(2) {
+      padding-left: 40px;
+    }
+  }
+  @media screen and(min-width:481px) {
+    &:nth-child(2) {
+      margin-top: 21px;
+      margin-left: 44px;
+    }
+  }
   @media screen and(min-width:769px) {
     &:nth-child(2) {
       padding-top: 32px;
-      padding-left: 305px;
-    }
-  }
-  @media screen and(max-width:768px) {
-    &:nth-child(2) {
-      margin-top: 21px;
-      margin-left: 64px;
+      padding-left: 295px;
+      margin: 0;
     }
   }
 }
