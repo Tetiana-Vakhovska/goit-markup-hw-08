@@ -10,6 +10,7 @@
 
   @media screen and( max-width:480px) {
     display: block;
+    overflow: hidden;
   }
   @media screen and( min-width:481px) {
     flex-wrap: wrap;
@@ -32,6 +33,7 @@
   @media screen and( max-width:480px) {
     width: 450px;
     height: 404px;
+    overflow: hidden;
   }
   @media screen and( min-width:481px) {
     max-width: 354px;
@@ -105,6 +107,7 @@
     display: block;
     width: 450px;
     height: 294px;
+    overflow: hidden;
   }
   @media screen and( min-width:481px) {
     width: 354px;
