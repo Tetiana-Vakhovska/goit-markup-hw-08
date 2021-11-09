@@ -120,14 +120,10 @@
     padding-right: 83px;
   }
   @media screen and (min-width: 481px) {
-    &:nth-child(1) {
-      text-align: center;
-    }
+    text-align: center;
   }
   @media screen and (min-width: 769px) {
-    &:nth-child(2) {
-      text-align: start;
-    }
+    text-align: start;
   }
 }
 
