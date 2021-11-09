@@ -56,7 +56,7 @@
   padding-top: 60px;
   @media screen and (min-width: 481px) {
     &:nth-child(2) {
-      padding-left: 166px;
+      padding-left: 96px;
       margin-top: 5px;
     }
   }
@@ -118,6 +118,7 @@
   color: $primary-white-color;
   @media screen and (max-width: 480px) {
     padding-right: 83px;
+    text-align: center;
   }
   @media screen and (min-width: 481px) {
     text-align: center;
@@ -201,6 +202,7 @@
   @media screen and (min-width: 481px) {
     padding-right: 152px;
     width: 450px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: 769px) {
     width: 358px;
