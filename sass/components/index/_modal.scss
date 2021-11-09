@@ -50,7 +50,7 @@
   @media screen and (min-width: 481px) {
     width: 450px;
     height: 609px;
-    top: 70%;
+    top: 50%;
     left: 70%;
   }
   @media screen and (min-width: 769px) {
@@ -71,6 +71,9 @@
   @media screen and (max-width: 480px) {
     width: 443px;
     padding-left: 435px;
+  }
+  @media screen and (min-width: 481px) {
+    padding-left: 478px;
   }
   @media screen and (min-width: 769px) {
     margin-top: 8px;
