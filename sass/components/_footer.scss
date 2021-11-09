@@ -124,6 +124,11 @@
       text-align: center;
     }
   }
+  @media screen and (min-width: 769px) {
+    &:nth-child(2) {
+      text-align: start;
+    }
+  }
 }
 
 .footer-design-item--mobil {
