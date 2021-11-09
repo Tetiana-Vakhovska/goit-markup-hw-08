@@ -23,14 +23,6 @@
 .benefit-section__item {
   @media screen and (min-width: 481px) {
     width: 354px;
-
-    &:nth-child(2) {
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-    &:nth-child(2) {
-      margin-right: 30px;
-    }
   }
   @media screen and (min-width: 769px) {
     width: 270px;
