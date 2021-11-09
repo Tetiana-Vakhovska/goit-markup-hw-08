@@ -1349,6 +1349,12 @@
   }
 }
 
+@media screen and (min-width: 769px) {
+  .footer-title:nth-child(2) {
+    text-align: start;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .footer-design-item--mobil {
     padding-right: 23;
