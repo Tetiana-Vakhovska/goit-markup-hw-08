@@ -6,6 +6,11 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  @media screen and( min-width:769px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 120px;
+  }
 }
 .secondary-button__item {
   margin-right: 8px;
