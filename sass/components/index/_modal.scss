@@ -8,11 +8,11 @@
   opacity: 1;
   visibility: visible;
   transition-timing-function: 250ms;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
     height: 609px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
     height: 609px;
   }
@@ -43,11 +43,11 @@
   transform: translate(-50%, -50%);
   padding-top: 8px;
   padding-right: 8px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
     height: 609px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
     height: 609px;
     top: 50%;
@@ -68,11 +68,11 @@
 .button-position {
   margin-top: 8px;
   padding-left: 498px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 443px;
     padding-left: 435px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     padding-left: 478px;
   }
   @media screen and (min-width: 1200px) {
@@ -106,7 +106,7 @@
   margin-bottom: 14px;
   padding-left: 41px;
   color: $title-text-color;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 360px;
     height: 60px;
     text-align: center;
@@ -156,7 +156,7 @@
   line-height: 1, 17;
   color: $primary-text-color;
   margin-bottom: 4px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-left: 40px;
   }
 }
@@ -179,7 +179,7 @@
     border-radius: 4px;
     fill: $accent-color;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 370px;
     margin-left: 40px;
   }
@@ -191,7 +191,7 @@
   width: 18px;
   height: 18px;
   color: currentColor;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     top: 149px;
     left: 95px;
   }
@@ -205,7 +205,7 @@
   top: 195px;
   left: 56px;
   color: currentColor;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     top: 217px;
     left: 95px;
   }
@@ -223,7 +223,7 @@
   top: 260px;
   left: 56px;
   color: currentColor;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     top: 282px;
     left: 95px;
   }
@@ -247,7 +247,7 @@
   &:focus {
     border: 1px solid $accent-color;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 370px;
     margin-left: 40px;
   }
@@ -277,7 +277,7 @@
   background-color: $accent-color;
   border: none;
   background-image: url(../images/icons.svg#email);
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-left: 60px;
   }
 }
@@ -304,7 +304,7 @@
   height: 24px;
   width: 400, 62px;
   text-align: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 1, 17;
   }
@@ -315,7 +315,7 @@
   font-size: 14px;
   line-height: 1, 71;
   color: $accent-color;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 1, 17;
   }
@@ -340,7 +340,7 @@
   &:hover {
     background-color: $button-send-color;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-left: 135px;
     margin-bottom: 40px;
   }
