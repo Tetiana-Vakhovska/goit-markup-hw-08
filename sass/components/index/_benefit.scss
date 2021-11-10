@@ -1,0 +1,97 @@
+.benefit-section {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    width: 450px;
+    height: 994px;
+  }
+  @media screen and (min-width: 481px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 738px;
+  }
+  @media screen and (min-width: 769px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 251px;
+    margin: 0 -135px;
+  }
+}
+.benefit-section__item {
+  @media screen and (min-width: 481px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 769px) {
+    width: 270px;
+    height: 251px;
+    &:nth-child(2) {
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
+.icon-conteiner {
+  background-color: $button-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  @media screen and (max-width: 480px) {
+    display: block;
+    width: 450px;
+    height: 120px;
+    padding-right: 175px;
+    padding-left: 175px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: 481px) {
+    display: block;
+    width: 354px;
+    height: 120px;
+    padding-right: 142px;
+    padding-left: 142px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: 769px) {
+    width: 270px;
+    height: 120px;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.benefit-section__icon {
+  width: 70px;
+  height: 70px;
+}
+.benefit-section__title {
+  font-size: 14px;
+  line-height: 1.17;
+  font-weight: 700;
+  color: $title-text-color;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  @media screen and (max-width: 480px) {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 270px;
+    max-height: 16px;
+    padding-bottom: 10px;
+    &:not(:first-child) {
+      padding-top: 30px;
+    }
+  }
+}
+.benefit-section__description {
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    &:not(:first-child) {
+      padding-bottom: 30px;
+    }
+  }
+}
