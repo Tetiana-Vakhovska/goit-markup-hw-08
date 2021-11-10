@@ -2,20 +2,17 @@
   background: $section-bg-color;
   padding: 60px 0;
   @media screen and (max-width: 768px) {
-    width: 480px;
     height: 603px;
     padding: 0;
   }
   @media screen and (min-width: 769px) {
-    width: 768px;
     padding: 0;
     background: $section-bg-color;
   }
   @media screen and (min-width: 1200px) {
-    width: 1600px;
-    height: 252px;
-    padding: 0;
+    margin: 0;
     background: $section-bg-color;
+    padding: 0;
   }
 }
 .footer-design {
@@ -33,6 +30,7 @@
     display: flex;
 
     width: 1600px;
+    height: 252px;
   }
 }
 .footer-design-item--mobil {
@@ -46,20 +44,20 @@
 
 .footer-design__item {
   color: currentColor;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
     &:not(:last-child) {
       padding-left: 109px;
     }
   }
   padding-top: 60px;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     &:nth-child(2) {
       padding-left: 96px;
       margin-top: 5px;
     }
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     &:nth-child(2) {
       padding-left: 60px;
       padding-top: 72px;
@@ -75,7 +73,7 @@
 
 .footer-design__item:not(:last-child) {
   margin-right: 70px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 678px) {
     margin-right: 0;
   }
 }
@@ -101,7 +99,7 @@
   &:not(:last-child) {
     margin-bottom: 9px;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     width: 232px;
   }
 }
@@ -115,27 +113,27 @@
   font-size: 14px;
   line-height: 1, 17;
   color: $primary-white-color;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     padding-right: 83px;
     text-align: center;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     text-align: center;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     text-align: start;
   }
 }
 
 .footer-design-item--mobil {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     padding-right: 23;
   }
 }
 .social-footer {
   display: flex;
   padding-top: 20px;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     width: 206px;
   }
 }
@@ -168,16 +166,15 @@
 }
 .footer-email {
   margin-top: 20px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 450px;
   }
-  @media screen and (min-width: 481px) {
-    width: 738px;
-    padding-left: 166px;
-  }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     width: 570px;
     padding-left: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 738px;
   }
 }
 .footer-input {
@@ -193,19 +190,18 @@
   padding-bottom: 0px;
   padding-right: 0px;
   font-size: 16px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 678px) {
     margin-bottom: 20px;
     width: 450px;
     padding-right: -16px;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     padding-right: 152px;
     width: 450px;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
-    margin: 0;
   }
 }
 .button-fotter {
@@ -226,14 +222,14 @@
 }
 
 .footer-design-item--mobil {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 60px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     margin-bottom: 60px;
     margin-top: 20px;
     margin-left: 125px;
@@ -251,24 +247,24 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1, 17;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     padding-top: 60px;
     padding-left: 39px;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     padding-left: 100px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     padding: 0;
   }
 }
 .contact {
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     width: 232px;
     padding-left: 61px;
     text-align: center;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     padding-left: 0;
     text-align: start;
   }
