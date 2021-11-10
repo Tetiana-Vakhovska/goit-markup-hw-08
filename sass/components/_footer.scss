@@ -1,46 +1,45 @@
 .footer {
   background: $section-bg-color;
   padding: 60px 0;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 480px;
     height: 603px;
     padding: 0;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     width: 768px;
     padding: 0;
     background: $section-bg-color;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     width: 1600px;
     height: 252px;
     padding: 0;
-    margin: 0 -140px;
     background: $section-bg-color;
   }
 }
 .footer-design {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: block;
     width: 480px;
     height: 603px;
   }
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 769px) {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
 
     width: 1600px;
   }
 }
 .footer-design-item--mobil {
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     width: 738px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     width: 570px;
   }
 }
