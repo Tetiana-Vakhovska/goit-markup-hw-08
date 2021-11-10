@@ -1,12 +1,12 @@
 .produce {
   display: flex;
   justify-content: space-between;
-  @media screen and(max-width:769px) {
+  @media screen and(max-width:1200px) {
     display: none;
   }
 }
 .produce-title {
-  @media screen and(max-width:769px) {
+  @media screen and(max-width:1200px) {
     display: none;
   }
 }
