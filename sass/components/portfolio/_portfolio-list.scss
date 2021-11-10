@@ -8,16 +8,16 @@
   margin-left: -30px;
   overflow: hidden;
 
-  @media screen and( max-width:480px) {
+  @media screen and( max-width:768px) {
     display: block;
     overflow: hidden;
   }
-  @media screen and( min-width:481px) {
+  @media screen and( min-width:769px) {
     flex-wrap: wrap;
     width: 738px;
     margin: 0;
   }
-  @media screen and( min-width:769px) {
+  @media screen and( min-width:1200px) {
     width: 1200px;
     margin: 0 -140px;
     display: flex;
@@ -30,12 +30,12 @@
   width: 370px;
   height: 404px;
   overflow: hidden;
-  @media screen and( max-width:480px) {
+  @media screen and( max-width:768px) {
     width: 450px;
     height: 404px;
     overflow: hidden;
   }
-  @media screen and( min-width:481px) {
+  @media screen and( min-width:769px) {
     max-width: 354px;
 
     margin: 0;
@@ -48,7 +48,7 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and( min-width:769px) {
+  @media screen and( min-width:1200px) {
     max-width: 370px;
     height: 100%;
     &:nth-child(3),
@@ -69,10 +69,10 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  @media screen and( min-width:481px) {
+  @media screen and( min-width:768px) {
     width: 354px;
   }
-  @media screen and( min-width:769px) {
+  @media screen and( min-width:1200px) {
     width: 370px;
   }
 }
@@ -103,17 +103,17 @@
   width: 370px;
   height: 294px;
   max-width: 100%;
-  @media screen and( max-width:480px) {
+  @media screen and( max-width:768px) {
     display: block;
     width: 450px;
     height: 294px;
     overflow: hidden;
   }
-  @media screen and( min-width:481px) {
+  @media screen and( min-width:769px) {
     width: 354px;
     display: block;
   }
-  @media screen and( min-width:769px) {
+  @media screen and( min-width:1200px) {
     display: block;
     width: 370px;
     height: 294px;
@@ -125,10 +125,10 @@
   border: 1px solid $portfolio-border-color;
   border-top: none;
   overflow: hidden;
-  @media screen and( min-width:481px) {
+  @media screen and( min-width:769px) {
     width: 354px;
   }
-  @media screen and( min-width:769px) {
+  @media screen and( min-width:1200px) {
     width: 370px;
   }
 }
