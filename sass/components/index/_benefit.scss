@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: block;
     width: 450px;
     height: 994px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     width: 738px;
@@ -20,7 +20,7 @@
   }
 }
 .benefit-section__item {
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
@@ -38,7 +38,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: block;
     width: 450px;
     height: 120px;
@@ -47,7 +47,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     display: block;
     width: 354px;
     height: 120px;
@@ -75,7 +75,7 @@
   color: $title-text-color;
   margin-bottom: 10px;
   padding-top: 30px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-left: 100px;
     margin-right: 100px;
     width: 270px;
@@ -87,7 +87,7 @@
   }
 }
 .benefit-section__description {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
     &:not(:first-child) {
       padding-bottom: 30px;
